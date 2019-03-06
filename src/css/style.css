@@ -129,6 +129,13 @@ select {
   font-family: "Georgia", serif;
   font-size: 18px;
   list-style: none;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.header-nav-item:hover {
+  color: #0096EE
 }
 
 .header-bg {

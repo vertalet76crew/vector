@@ -1,14 +1,12 @@
 let button = document.getElementById("offerButton");
 let close = document.querySelector(".close");
 let arrow = document.querySelector(".footer-wraper__arrow");
-let t;
-console.log(arrow)
+let count;
 
 function overlayActive(e) {
   e.preventDefault()
   let overlay = document.querySelector(".overlay")
   overlay.classList.add("active");
-  console.log(overlay)
 }
 
 function closeOverlay() {
@@ -24,7 +22,7 @@ function lightScroll() {
   let top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
   if (top > 0) {
     window.scrollBy(0, (top + 100) / -10);
-    t = setTimeout("lightScroll()", 10);
-  } else clearTimeout(t)
+    count = setTimeout("lightScroll()", 10);
+  } else clearTimeout(count)
   return false
 }
